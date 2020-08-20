@@ -1,0 +1,120 @@
+body {
+  background-image: url('images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 40px 40px 0 40px;
+  max-width: 1440px;
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+}
+
+header img {
+  width: 200px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+main .image {
+  width: 60%;
+  margin-right: 40px;
+}
+
+main .image img {
+  width: 100%;
+}
+
+main .txt-content {
+  width: 30%;
+}
+
+main .txt-content h1 {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+main .txt-content p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+main button {
+  width: 190px;
+  border: none;
+  background-color: white;
+  padding: 16px 0;
+  cursor: pointer;
+  border-radius: 50px;
+  color: hsl(257, 40%, 49%);
+  font-size: 16px;
+  font-family: 'Open Sans';
+  -webkit-box-shadow: 4px 6px 12px 1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 4px 6px 12px 1px rgba(0,0,0,0.23);
+  box-shadow: 4px 6px 12px 1px rgba(0,0,0,0.23);
+}
+
+main button:hover {
+  background-color: #E9E9E9
+}
+
+footer {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+footer .social-media-icons ion-icon {
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border-radius: 50%;
+   border: 1.5px solid white;
+   margin-left: 20px;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+    max-width: max-width: 374px;
+    background-image: url('images/bg-mobile.svg');
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    text-align: center;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  main {
+    display: inherit;
+  }
+
+  main .image {
+    width: 100%;
+  }
+
+  main .image img {
+    width: 100%;
+  }
+
+  main .txt-content {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .social-media-icons ion-icon {
+     margin-left: inherit;
+     margin: 0 10px;
+     width: 20px;
+     height: 20px;
+  }
+
+}
